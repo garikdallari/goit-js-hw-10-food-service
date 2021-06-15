@@ -24,7 +24,7 @@ getCurrentTheme()
 function getCurrentTheme() {
     const currentTheme = localStorage.getItem('theme');
 
-    if (currentTheme === Theme.LIGHT) {
+    if (currentTheme === Theme.LIGHT || currentTheme === null) {
         uncheckedThemeSwitcher()
     }
 
@@ -48,3 +48,4 @@ function uncheckedThemeSwitcher() {
     localStorage.setItem('theme', Theme.LIGHT);
     themeSwitcher.checked = false
 }
+
