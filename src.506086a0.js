@@ -11,8 +11,8 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"object"==typeof m
 },{"handlebars/dist/handlebars.runtime":"pAws"}],"eA5H":[function(require,module,exports) {
 "use strict";var e=u(require("../menu.json")),r=u(require("../templates/menu-card.hbs"));function u(e){return e&&e.__esModule?e:{default:e}}var t=document.querySelector(".js-menu"),n=a(e.default);function a(e){return(0,r.default)(e)}t.insertAdjacentHTML("beforeend",n);
 },{"../menu.json":"mA8c","../templates/menu-card.hbs":"IS2B"}],"keXy":[function(require,module,exports) {
-var e={LIGHT:"light-theme",DARK:"dark-theme"},t=document.querySelector("#theme-switch-toggle");function c(e){var t=e.currentTarget.checked;t&&a(),t||d()}function o(){var t=localStorage.getItem("theme");t===e.LIGHT&&d(),t===e.DARK&&a()}function a(){document.body.classList.add(e.DARK),document.body.classList.remove(e.LIGHT),localStorage.setItem("theme",e.DARK),t.checked=!0}function d(){document.body.classList.add(e.LIGHT),document.body.classList.remove(e.DARK),localStorage.setItem("theme",e.LIGHT),t.checked=!1}t.addEventListener("change",c),o();
+var e={LIGHT:"light-theme",DARK:"dark-theme"},t=document.querySelector("#theme-switch-toggle");function c(e){var t=e.currentTarget.checked;t&&a(),t||d()}function o(){var t=localStorage.getItem("theme");t!==e.LIGHT&&null!==t||d(),t===e.DARK&&a()}function a(){document.body.classList.add(e.DARK),document.body.classList.remove(e.LIGHT),localStorage.setItem("theme",e.DARK),t.checked=!0}function d(){document.body.classList.add(e.LIGHT),document.body.classList.remove(e.DARK),localStorage.setItem("theme",e.LIGHT),t.checked=!1}t.addEventListener("change",c),o();
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./styles.css"),require("./js/cards"),require("./js/theme-switcher");
 },{"./styles.css":"Tnu0","./js/cards":"eA5H","./js/theme-switcher":"keXy"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-service/src.19885244.js.map
+//# sourceMappingURL=/goit-js-hw-10-food-service/src.506086a0.js.map
